@@ -118,12 +118,6 @@ namespace Tweetinvi.Logic
                 if (text != null && DisplayTextRange != null)
                 {
                     var suffixStartIndex = DisplayTextRange[1];
-
-                    if (suffixStartIndex < text.Length && suffixStartIndex > 0)
-                    {
-                        ++suffixStartIndex;
-                    }
-
                     return UnicodeHelper.UnicodeSubstring(text, suffixStartIndex);
                 }
 
